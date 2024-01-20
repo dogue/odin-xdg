@@ -16,6 +16,8 @@ All procedures will return the directories as configured by their relevant envir
 
 ## Considerations
 
+odin-xdg assumes Linux as the host. I may refactor this to be more portable, but Linux is the primary target.
+
 The `runtime_dir` procedure requires retrieving the UID in order to calculate the return value (default: `/run/user/$UID`). To my knowledge (and I did hunt) there is no good *documented* way to do this in Odin yet. Consequently, odin-xdg relies on some of the deeper parts of `core` that you won't find in the [package docs](https://pkg.odin-lang.org/).
 
 I don't know how likely those parts are to change, though I know gingerBill has some packages in there that are dummy packages for future work. As such, I cannot guarantee that a future update to the language won't unexpectedly break this package. Buyer beware.
