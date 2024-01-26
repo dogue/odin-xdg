@@ -24,4 +24,4 @@ I don't know how likely those parts are to change, though I know gingerBill has 
 
 ## License
 
-[0BSD](https://opensource.org/license/0bsd/)
+[BSD-3](LICENSE)
